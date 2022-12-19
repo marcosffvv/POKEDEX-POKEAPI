@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fabada;
+}
+body .logo {
+  display: flex;
+  width: 60%;
+  padding: 50px;
+}
+body .caja_pokemon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body .caja_pokemon div {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 200px;
+  margin: 2%;
+  align-items: center;
+  border: 10px double rgb(51, 98, 174);
+  background-color: rgb(255, 204, 1);
+}
+body .caja_pokemon div img {
+  max-width: 95%;
+  height: 200px;
+  padding: 5px;
+}
+body .caja_pokemon div p {
+  margin-bottom: 3%;
+}
+body .caja_pokemon div h4 {
+  padding-top: 5px;
+}/*# sourceMappingURL=style.css.map */

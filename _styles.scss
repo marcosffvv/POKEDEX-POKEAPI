@@ -1,0 +1,30 @@
+@keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+@keyframes color-change-2x{0%{background:#19dcea}100%{background:#b22cff}}
+
+@media (min-width: 576px){
+    .caja{
+        &__ayuda{
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .caja{
+        &__ayuda{
+            img{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}

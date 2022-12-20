@@ -1,44 +1,152 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-}
-
-body {
+.caja {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fabada;
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+          animation: color-change-2x 2s linear infinite alternate both;
 }
-body .logo {
+.caja__ayuda {
+  display: flex;
+  position: fixed;
+  top: 35px;
+  right: 35px;
+}
+.caja__ayuda img {
+  width: 30px;
+  height: 30px;
+}
+.caja__logo {
   display: flex;
   width: 60%;
   padding: 50px;
 }
-body .caja_pokemon {
+.caja__buscador {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+.caja__buscador--1 {
+  padding: 5px;
+  background-color: rgb(255, 204, 1);
+  border: 8px double rgb(51, 98, 174);
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
+}
+.caja__buscador--2 {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(255, 204, 1);
+  border: 8px double rgb(51, 98, 174);
+  margin-top: 3%;
+}
+.caja__buscador--2:hover {
+  background-color: rgb(51, 98, 174);
+  color: rgb(255, 204, 1);
+  border: 8px double rgb(255, 204, 1);
+}
+.caja__pokemon {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-body .caja_pokemon div {
+.caja__pokemon div {
   display: flex;
   flex-direction: column;
   height: 250px;
   width: 200px;
   margin: 2%;
   align-items: center;
-  border: 10px double rgb(51, 98, 174);
+  border: 20px double rgb(51, 98, 174);
   background-color: rgb(255, 204, 1);
+  border-radius: 15%;
 }
-body .caja_pokemon div img {
+.caja__pokemon div img {
   max-width: 95%;
   height: 200px;
   padding: 5px;
 }
-body .caja_pokemon div p {
+.caja__pokemon div p {
+  margin-bottom: 3%;
+  text-decoration: underline;
+}
+.caja__pokemon div h4 {
+  padding-top: 5px;
+}
+.caja__pokemon div h3 {
   margin-bottom: 3%;
 }
-body .caja_pokemon div h4 {
-  padding-top: 5px;
+.caja__pokemon div:hover {
+  -webkit-animation: rotate-center 0.4s ease-in-out both;
+          animation: rotate-center 0.4s ease-in-out both;
+}
+.caja__pokemon div:hover div {
+  width: 100%;
+}
+.caja__pokemon div:hover p {
+  display: none;
+}
+.caja__pokemon div:hover h3 {
+  display: none;
+}
+.caja__pokemon div:hover h4 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@media (min-width: 576px) {
+  .caja__ayuda img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .caja__ayuda img {
+    width: 70px;
+    height: 70px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */

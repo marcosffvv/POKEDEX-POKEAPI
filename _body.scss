@@ -1,0 +1,108 @@
+.caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: color-change-2x 2s linear infinite alternate both;
+
+    &__ayuda{   
+        display: flex;
+        position: fixed;
+        top: 35px;
+        right: 35px;
+
+        img{
+            width: 30px;
+            height: 30px;
+
+        }
+    }
+    &__logo{
+        display: flex;
+        width: 60%;
+        padding: 50px;
+    }
+    &__buscador{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 3%;
+        
+        &--1{
+            padding: 5px;
+            background-color: rgb(255, 204, 1);
+            border: 8px double rgb(51, 98, 174);
+            margin-left: 3%;
+            margin-right: 3%;
+            margin-top: 3%;
+
+        }
+        &--2{
+            width: 200px;
+            height: 40px;
+            background-color: rgb(255, 204, 1);
+            border: 8px double rgb(51, 98, 174);
+            margin-top: 3%;
+            
+        }
+        &--2:hover{
+            background-color: rgb(51, 98, 174);
+            color: rgb(255, 204, 1);
+            border: 8px double rgb(255, 204, 1);
+
+        }
+    }    
+    &__pokemon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+        div{
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            width: 200px;
+            margin: 2%;
+            align-items: center;
+            border: 20px double rgb(51, 98, 174);
+            background-color: rgb(255, 204, 1);
+            border-radius: 15%;
+
+            img{
+                max-width: 95%;
+                height: 200px;
+                padding: 5px;
+            }
+            p{
+                margin-bottom: 3%;
+                text-decoration: underline;
+            }
+            h4{
+                padding-top: 5px;
+            }
+            h3{
+                margin-bottom: 3%;
+            }
+        }
+        div:hover{
+            animation:rotate-center .4s ease-in-out both;
+
+            div{
+                width: 100%;
+            }
+            p{
+                display: none;
+            }
+            h3{
+                display: none;
+            }
+            h4{
+                font-size: 30px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

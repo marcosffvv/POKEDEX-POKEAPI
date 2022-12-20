@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex - Marcos</title>
+    <link rel="shortcut icon" href="./assets/pokeball - icono.png" type="image/x-icon">
+    <title>Pokedex - Marcos Fraile</title>
     <script src="./pokedex.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img class="logo" src="./assets/International_Pokémon_logo.svg.png" alt="logo">
-    <div class="caja_pokemon"></div>
+    <div class="caja">
+        <button class="caja__ayuda"><img src="./assets/pokeball - icono.png" alt="logito"></button>
+
+        <img class="caja__logo" src="./assets/International_Pokémon_logo.svg.png" alt="logo">
+
+        <div class="caja__buscador">
+            <button class="caja__buscador--2"><strong>ADIVINAR POKEMON</strong></button>
+
+            <input placeholder="ejemplo: pikachu" class="caja__buscador--1" type="text">
+
+            <button class="caja__buscador--2"><strong>BATALLAS POKEMON</strong></button>
+        </div>
+        
+        <div class="caja__pokemon"></div>
+    </div>
 </body>
 </html>

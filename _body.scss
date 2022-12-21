@@ -2,8 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: color-change-2x 2s linear infinite alternate both;
+    //animation: color-change-2x 3s linear infinite alternate both;
+    background-color: #fabada;
 
+// logo de la bolita arriba a la derecha
     &__ayuda{   
         display: flex;
         position: fixed;
@@ -16,45 +18,39 @@
 
         }
     }
+
+// logo ajustes arriba a la izquierda (para cambiar background color, color de la letra, etc)
+    &__ajustes{
+        display: flex;
+        position: fixed;
+        top: 35px;
+        left: 35px;
+
+        img{
+            width: 30px;
+            height: 30px;
+
+        }
+    }
+
+// logo principal de la página
     &__logo{
         display: flex;
         width: 60%;
         padding: 50px;
     }
+
+// buscador de pokemons
     &__buscador{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        width: 260px;
         margin-bottom: 5%;
         margin-top: 3%;
-        
-        &--1{
-            padding: 5px;
-            background-color: rgb(255, 204, 1);
-            border: 8px double rgb(51, 98, 174);
-            margin-left: 3%;
-            margin-right: 3%;
-            margin-top: 3%;
+        padding: 5px;
+        background-color: rgb(255, 204, 1);
+        border: 8px double rgb(51, 98, 174);
+        }
 
-        }
-        &--2{
-            width: 200px;
-            height: 40px;
-            background-color: rgb(255, 204, 1);
-            border: 8px double rgb(51, 98, 174);
-            margin-top: 3%;
-            
-        }
-        &--2:hover{
-            background-color: rgb(51, 98, 174);
-            color: rgb(255, 204, 1);
-            border: 8px double rgb(255, 204, 1);
-
-        }
-    }    
+// los div con los pokemons y la información
     &__pokemon{
         display: flex;
         flex-wrap: wrap;
@@ -103,6 +99,32 @@
                 font-size: 30px;
                 text-transform: capitalize;
             }
+        }
+    }
+
+// los dos botones del final (juegos)
+    &__juegos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 3%;
+
+        &--2{
+            width: 200px;
+            height: 40px;
+            background-color: rgb(255, 204, 1);
+            border: 8px double rgb(51, 98, 174);
+            margin-top: 3%;
+            
+        }
+        &--2:hover{
+            background-color: rgb(51, 98, 174);
+            color: rgb(255, 204, 1);
+            border: 8px double rgb(255, 204, 1);
+
         }
     }
 }

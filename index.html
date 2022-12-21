@@ -5,25 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/pokeball - icono.png" type="image/x-icon">
-    <title>Pokedex - Marcos Fraile</title>
+    <title>Pokedex - Marcos Fraile Fdez</title>
     <script src="./pokedex.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="caja">
+
+        <!-- logo de la bolita arriba a la derecha -->
         <button class="caja__ayuda"><img src="./assets/pokeball - icono.png" alt="logito"></button>
 
+        <!-- logo ajustes arriba a la izquierda -->
+        <button class="caja__ajustes"><img src="./assets/download.png" alt="ajustes"></button>
+
+        <!-- logo principal de la página -->
         <img class="caja__logo" src="./assets/International_Pokémon_logo.svg.png" alt="logo">
 
-        <div class="caja__buscador">
-            <button class="caja__buscador--2"><strong>ADIVINAR POKEMON</strong></button>
-
-            <input placeholder="ejemplo: pikachu" class="caja__buscador--1" type="text">
-
-            <button class="caja__buscador--2"><strong>BATALLAS POKEMON</strong></button>
-        </div>
+        <!-- buscador de pokemons -->
+        <input placeholder='ejemplo: "pikachu" || "electric"' class="caja__buscador" type="text">
         
+        <!-- los div con los pokemons y la información -->
         <div class="caja__pokemon"></div>
+
+        <!-- los dos botones del final (juegos) -->
+        <div class="caja__juegos">
+
+            <!-- primer juego -->
+            <button class="caja__juegos--2"><strong>ADIVINAR POKEMON</strong></button>
+
+            <!-- segundo juego -->
+            <button class="caja__juegos--2"><strong>BATALLAS POKEMON</strong></button>
+
+        </div>
+
     </div>
 </body>
 </html>

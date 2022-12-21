@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  -webkit-animation: color-change-2x 2s linear infinite alternate both;
-          animation: color-change-2x 2s linear infinite alternate both;
+  background-color: #fabada;
 }
 .caja__ayuda {
   display: flex;
@@ -15,40 +14,28 @@
   width: 30px;
   height: 30px;
 }
+.caja__ajustes {
+  display: flex;
+  position: fixed;
+  top: 35px;
+  left: 35px;
+}
+.caja__ajustes img {
+  width: 30px;
+  height: 30px;
+}
 .caja__logo {
   display: flex;
   width: 60%;
   padding: 50px;
 }
 .caja__buscador {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  width: 260px;
   margin-bottom: 5%;
   margin-top: 3%;
-}
-.caja__buscador--1 {
   padding: 5px;
   background-color: rgb(255, 204, 1);
   border: 8px double rgb(51, 98, 174);
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-top: 3%;
-}
-.caja__buscador--2 {
-  width: 200px;
-  height: 40px;
-  background-color: rgb(255, 204, 1);
-  border: 8px double rgb(51, 98, 174);
-  margin-top: 3%;
-}
-.caja__buscador--2:hover {
-  background-color: rgb(51, 98, 174);
-  color: rgb(255, 204, 1);
-  border: 8px double rgb(255, 204, 1);
 }
 .caja__pokemon {
   display: flex;
@@ -98,6 +85,27 @@
   font-size: 30px;
   text-transform: capitalize;
 }
+.caja__juegos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+.caja__juegos--2 {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(255, 204, 1);
+  border: 8px double rgb(51, 98, 174);
+  margin-top: 3%;
+}
+.caja__juegos--2:hover {
+  background-color: rgb(51, 98, 174);
+  color: rgb(255, 204, 1);
+  border: 8px double rgb(255, 204, 1);
+}
 
 @-webkit-keyframes rotate-center {
   0% {
@@ -116,30 +124,22 @@
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes color-change-2x {
-  0% {
-    background: #19dcea;
-  }
-  100% {
-    background: #b22cff;
-  }
-}
-@keyframes color-change-2x {
-  0% {
-    background: #19dcea;
-  }
-  100% {
-    background: #b22cff;
-  }
-}
 @media (min-width: 576px) {
   .caja__ayuda img {
+    width: 50px;
+    height: 50px;
+  }
+  .caja__ajustes img {
     width: 50px;
     height: 50px;
   }
 }
 @media (min-width: 768px) {
   .caja__ayuda img {
+    width: 70px;
+    height: 70px;
+  }
+  .caja__ajustes img {
     width: 70px;
     height: 70px;
   }

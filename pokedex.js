@@ -52,4 +52,27 @@ const init = async () => {
     };
 };
 
+
+// para cambiar de color el fondo de pantalla cada vez que se hace click en el boton de ajustes arriba a la izquierda
+
+const setButon = document.querySelector(".caja__ajustes");
+const caja$$ = document.querySelector(".caja");
+const randomColor = () => {
+    Math.floor(Math.random()*16777215).toString(16)
+    return (Math.floor(Math.random()*16777215).toString(16));
+}
+const changeBackground = () => {
+    caja$$.style.backgroundColor = '#' + randomColor();
+};
+setButon.addEventListener('click', changeBackground);
+
+// buscador para filtrar los pokemons por nombre y tipo
+
+// const buscarPokemon = () => {
+//     const buscador$$ = document.querySelector(".            caja__buscador");
+//     buscador$$.addEventListener('input', () =>
+//     searchCharacters(buscador$$.value, arrayOfPokemons)
+//     );
+// }
+
 init();

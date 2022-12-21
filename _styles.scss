@@ -4,32 +4,24 @@
 @media (min-width: 576px){
     .caja{
         &__ayuda{
-            img{
-                width: 50px;
-                height: 50px;
-            }
+            width: 50px;
+            height: 50px;
         }
         &__ajustes{
-            img{
-                width: 50px;
-                height: 50px;
-            }
+            width: 50px;
+            height: 50px;           
         }
     }
 }
 @media (min-width: 768px){
     .caja{
         &__ayuda{
-            img{
-                width: 70px;
-                height: 70px;
-            }
+            width: 70px;
+            height: 70px;
         }
         &__ajustes{
-            img{
-                width: 70px;
-                height: 70px;
-            }
+            width: 70px;
+            height: 70px;    
         }
     }
 }
